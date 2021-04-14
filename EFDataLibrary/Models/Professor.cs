@@ -21,7 +21,6 @@ namespace EFDataLibrary.Models
         [Column(TypeName = "nvarchar(255)")]
         public string Address { get; set; }
         public List<Exam> Exams { get; set; } = new List<Exam>();
-        public int ExamsId { get; set; }
 
         public List<ProfessorSubject> Subjects { get; set; } = new List<ProfessorSubject>();
 

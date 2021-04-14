@@ -117,8 +117,6 @@ namespace EFDataLibrary.Migrations
                         .HasColumnType("nvarchar(255)")
                         .HasMaxLength(255);
 
-                    b.Property<int>("ExamsId")
-                        .HasColumnType("int");
 
                     b.Property<string>("LastName")
                         .IsRequired()
@@ -139,7 +137,6 @@ namespace EFDataLibrary.Migrations
                         {
                             ProfessorID = 1,
                             Address = "Makedonska,Beograd",
-                            ExamsId = 0,
                             LastName = "Markovic",
                             Name = "Marko"
                         },
@@ -147,7 +144,6 @@ namespace EFDataLibrary.Migrations
                         {
                             ProfessorID = 2,
                             Address = "Goce Delceva,Beograd",
-                            ExamsId = 0,
                             LastName = "Popovic",
                             Name = "Milos"
                         },
@@ -155,7 +151,6 @@ namespace EFDataLibrary.Migrations
                         {
                             ProfessorID = 3,
                             Address = "Svetosavska,Beograd",
-                            ExamsId = 0,
                             LastName = "Milosevic",
                             Name = "Milica"
                         });

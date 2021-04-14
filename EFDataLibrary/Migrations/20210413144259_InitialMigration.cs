@@ -15,8 +15,7 @@ namespace EFDataLibrary.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
-                    ExamsId = table.Column<int>(nullable: false)
+                    Address = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -96,12 +95,12 @@ namespace EFDataLibrary.Migrations
 
             migrationBuilder.InsertData(
                 table: "Professor",
-                columns: new[] { "ProfessorID", "Address", "ExamsId", "LastName", "Name" },
+                columns: new[] { "ProfessorID", "Address", "LastName", "Name" },
                 values: new object[,]
                 {
-                    { 1, "Makedonska,Beograd", 0, "Markovic", "Marko" },
-                    { 2, "Goce Delceva,Beograd", 0, "Popovic", "Milos" },
-                    { 3, "Svetosavska,Beograd", 0, "Milosevic", "Milica" }
+                    { 1, "Makedonska,Beograd",  "Markovic", "Marko" },
+                    { 2, "Goce Delceva,Beograd",  "Popovic", "Milos" },
+                    { 3, "Svetosavska,Beograd",  "Milosevic", "Milica" }
                 });
 
           
